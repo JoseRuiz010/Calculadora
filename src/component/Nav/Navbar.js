@@ -5,7 +5,7 @@ export const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Navbar
+            Inicio
           </Link>
           <button
             className="navbar-toggler"
@@ -34,8 +34,6 @@ export const Navbar = () => {
                   Lugar de las Reices
                 </Link>
               </li>
-
-              <li className="nav-item"></li>
             </ul>
           </div>
         </div>

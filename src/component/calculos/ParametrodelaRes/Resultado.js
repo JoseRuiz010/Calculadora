@@ -49,7 +49,7 @@ export const Resultado = ({ res }) => {
 
   return (
     <div className="ResultadoRespuestaTransitoria">
-      <h1>Resultado</h1>
+      <h1 className="title">Resultado</h1>
       <div className="Resultados">
         <label className="items-result">
           <b>Z=</b> <span>{z}</span>
