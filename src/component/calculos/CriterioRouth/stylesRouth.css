@@ -1,0 +1,14 @@
+
+
+.mainRouth{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+.form-respuestaTransitoria{
+    width: 95%;
+    margin: 20px;
+}

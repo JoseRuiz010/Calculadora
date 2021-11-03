@@ -29,7 +29,7 @@ export const EcCaracteristica = ({ setResultados, Resultados }) => {
 
   return (
     <div className="main-Form">
-      <form className="form-respuestaTransitoria">
+      <form className="form-respuestaTransitoria box">
         <input
           onChange={handleSForm}
           name="k"

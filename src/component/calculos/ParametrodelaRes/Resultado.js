@@ -2,11 +2,11 @@ import React from "react";
 
 export const Resultado = ({ res }) => {
   const { z, q } = res;
-  console.log(q);
+  //console.log(q);
 
   if (res.sp) {
     return (
-      <div className="ResultadoRespuestaTransitoria">
+      <div className="ResultadoRespuestaTransitoria box">
         <h1>Resultado</h1>
         <div className="Resultados">
           <label className="items-result">
