@@ -108,10 +108,10 @@ const calcSP = (s1, o) => {
   s1 = s1 / 100;
   const a = Math.pow(Math.PI, 2) / (Math.log(s1) * Math.log(s1));
 
-  const z = Math.sqrt(1 / (a + 1));
-  const k = Math.pow(o / z, 2);
+  const z = Math.sqrt(1 / (a + 1)).toFixed(5);
+  const k = Math.pow(o / z, 2).toFixed(5);
   console.log("k=" + k);
-  return z;
+  return {z,k};
 };
 
 export const Calculos = {

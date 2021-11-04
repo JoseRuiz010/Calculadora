@@ -120,6 +120,7 @@
 }
 
 .form-sp{
+    margin: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,7 +132,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 200px;
+    width: 80%;
     margin: 10px;
 }
 .valoresZ{
@@ -141,7 +142,7 @@
     align-content: center;
 }
 .contentresSP{
-    margin-top: 25px;
+    margin-bottom: 25px;
     padding: 10px;
     display: flex;
     justify-content: space-around;

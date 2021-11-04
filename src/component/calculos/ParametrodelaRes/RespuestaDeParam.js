@@ -19,9 +19,9 @@ export const RespuestaDeParam = () => {
     const o = Resultados[Resultados.length - 1].r.raices.s1.a;
     const ressp1 = Calculos.calcSP(form.sp1, o);
     const ressp2 = Calculos.calcSP(form.sp2, o);
-    setResultadoSP([...ResultadoSP, { r1: ressp1, r2: ressp2 }]);
+    setResultadoSP([...ResultadoSP, { r1: ressp1, r2: ressp2, sp1:form.sp1,sp2:form.sp2}]);
 
-    console.log(o);
+     
   };
   const handleForm = (e) => {
     const { target } = e;
@@ -48,7 +48,9 @@ export const RespuestaDeParam = () => {
             ))
           : false}
       </div>
-      <div className="box form-sp">
+      
+      {
+        Resultados.length>0 &&  <div className="box form-sp">
         <h3>
           <input
             className="inp"
@@ -68,13 +70,18 @@ export const RespuestaDeParam = () => {
           Fijar
         </button>
       </div>
+      }
+     
 
-      <div className="contentresSP">
+     {ResultadoSP.length>0 && <div className="contentresSP">
+       {ResultadoSP.map(r=>(
         <ResultadoSp
-          val={{ sp1: form.sp1, sp2: form.sp2 }}
-          res={{ r1: 1.77, r2: 2.55 }}
-        ></ResultadoSp>
-      </div>
+            
+            res={{ r1: r.r1, r2:r.r2,sp1:r.sp1,sp2:r.sp2}}
+          ></ResultadoSp>
+
+       )) }
+      </div>}
     </div>
   );
 };
