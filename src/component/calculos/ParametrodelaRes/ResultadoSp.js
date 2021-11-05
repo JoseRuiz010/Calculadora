@@ -7,21 +7,21 @@ export const ResultadoSp = ({ res }) => {
   return (
     <div className="restultadoSP box">
       <div className="title">
-        Para: <b> {sp1 + " < " + "SP" + " < " + sp2}</b>
+        Para: <b> {`${sp1} + " < " + "SP" + " < " + ${sp2}`} </b>
       </div>
       <div className="valoresZ">
-        <p>{r1.z+ "<"}</p>
+        <p>{r1.z+ " < "}</p>
         <p>
-          <b> Z</b>
-        </p>
-        <p>{"<" + r2.z}</p>
+          <b> Z </b> 
+         </p>
+        <p>{" < " + r2.z}</p>
       </div>
       <div className="valoresZ">
-        <p>{r1.k+ "<"}</p>
+        <p>{r1.k+ " < "}</p>
         <p>
           <b> K</b>
         </p>
-        <p>{"<" + r2.k}</p>
+        <p>{" < " + r2.k}</p>
       </div>
     </div>
   );

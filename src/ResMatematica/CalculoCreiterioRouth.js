@@ -1,5 +1,5 @@
-const estabilidad = (a, b, c, k) => {
- 
+const estabilidad = (a) => {
+ console.log(a);
 };
 
 export const Crouth = {
