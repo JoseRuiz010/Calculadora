@@ -48,7 +48,7 @@ export const Resultado = ({ res }) => {
   }
 
   return (
-    <div className="ResultadoRespuestaTransitoria">
+    <div className="ResultadoRespuestaTransitoria box">
       <h1 className="title">Resultado</h1>
       <div className="Resultados">
         <label className="items-result">
